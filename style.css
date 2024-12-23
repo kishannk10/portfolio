@@ -254,9 +254,13 @@ section {
     padding: 60px;
     border: 2px ;
     border-radius: 30px;
-    
-
 }
+.project-card h3{
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+    background-clip: text;
+    color: transparent;
+}
+
 .open {
     text-decoration: none;
     text-align: center;
