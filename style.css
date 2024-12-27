@@ -340,7 +340,13 @@ h1 h3 {
     color: black;
     font-size: 20px;
     color: white;
+    transistion:0.5s;
 }
+.social-btn a:hover{
+    transform: scale(1.5);
+    color: rgb(199, 68, 199);
+}
+
 
 p {
     color: white;
