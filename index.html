@@ -20,6 +20,9 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!---animate on scroll-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -58,21 +61,21 @@
     <section id="about" class="about">
 
         <div class="about-container">
-            <img src="profile.jpg">
+            <img src="profile.jpg" data-aos="fade-left"  data-aos-duration="1000">
 
             <div class="info">
-                <div class="text">
+                <div class="text" data-aos="fade-right"  data-aos-duration="1000">
                     <h3>Hi, I'm</h3>
                     <h1> NK kishan</h1>
                     <p> Fresher </p>
                 </div>
-                <div class="btn-group">
+                <div class="btn-group" data-aos="fade-left"  data-aos-duration="1000">
                     <a href="kishan CV.pdf" download="your_cv" class="btn">downlode cv</a>
                 </div>
                 
                 
                 
-        <div class="social">
+        <div class="social" data-aos="fade-up"  data-aos-duration="1000">
             <div class="social-btn">
                 <a href="https://github.com/kishannk10" i class="fa-brands fa-github"></i></a>
             </div>
@@ -96,19 +99,28 @@
     <section id="Education" class="Education">
 
         <div class="Education-container">
-            <h2>Education</h2>
+            <h2 data-aos="fade-up">Education</h2>
             <div  class="Education-grid">
-                <div class="Education-card" >
+                <div class="Education-card"
+                 data-aos="fade-right"
+                 data-aos-duration="1000"
+                >
                     <h3> BE in ECE</h3>
                     <P>Sethu Institude Of Technology</P>
                     <P>75 Percentage </P>
                 </div>
-                <div class="Education-card">
+                <div class="Education-card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                >
                     <h3> HSC</h3>
                     <P>Virudhnagar Hindu Nadar School</P>
                     <P>85 Percentage</P>
                 </div>
-                <div class="Education-card">
+                <div class="Education-card"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                >
                     <h3> SSLC</h3>
                     <P>Krishnamal Ramasubbaiyer School </P>
                     <P>80 Percentage</P>
@@ -118,21 +130,21 @@
 
 
         <div class="my-skills">
-            <h3> My Skill's</h3>
+            <h3  data-aos="fade-right"> My Skill's</h3>
             <div class="skills">
                 <div class="skills-info">
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
+                        <li data-aos="fade-up" data-aos-duration="1000">HTML</li>
+                        <li data-aos="fade-up" data-aos-duration="1000">CSS</li>
+                        <li data-aos="fade-up" data-aos-duration="1000">JavaScript</li>
                     </ul>
                     <ul>
-                        <li>Bootstrap</li>
-                        <li>My SQL</li>
-                        <li>React</li>
+                        <li data-aos="fade-up" data-aos-duration="1000">Bootstrap</li>
+                        <li data-aos="fade-up" data-aos-duration="1000">My SQL</li>
+                        <li data-aos="fade-up" data-aos-duration="1000">React</li>
 
                     </ul>
-                    <div class="code-toggle">
+                    <div class="code-toggle" data-aos="flip-left"  data-aos-duration="1000">
                         <i class="fa-solid fa-code"></i>
                     </div>
                 </div>
@@ -149,16 +161,16 @@
     <!---projects-->
     <section id="projects" class="my-projects">
         <div class="projects-container">
-            <h2> My Project's</h2>
+            <h2 data-aos="fade-right"> My Project's</h2>
             <div class="project-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="1000">
                     <h3>Calculator</h3>
                     <p>created a calculator using HTMl CSS JavaScript</p>
                     <div class="open">
                         <a href="https://kishannk10.github.io/calculator/">click to open</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="1000">
                     <h3>Weather App</h3>
                     <p>created a Weather App using Fetch API</p>
                     <div class="open">
@@ -182,11 +194,11 @@
 
     <section id="contact" class="Contact">
         <div class="contact-container">
-            <h2>Contact Me</h2>
+            <h2 data-aos="fade-up"> Contact Me</h2>
             <div class="contact-info">
                 <div class="contact-me">
-                    <p><i class="fa-regular fa-envelope"></i> : kishannk000@gmail.com</p>
-                    <p> <i class="fa-solid fa-phone"> </i> : + 918667296987</p>
+                    <p data-aos="fade-right" data-aos-duration="1000"><i class="fa-regular fa-envelope"></i> : kishannk000@gmail.com</p>
+                    <p data-aos="fade-right" data-aos-duration="1000"> <i class="fa-solid fa-phone"> </i> : + 918667296987</p>
                 </div>
             </div>
         </div>
@@ -218,6 +230,7 @@
     </footer>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script  src="portfolio.js"></script>
 </body>
