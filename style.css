@@ -1,10 +1,11 @@
-
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: "poppins";
     scroll-behavior: smooth;
+    
+
 
 }
 
@@ -61,6 +62,8 @@ li a {
     text-decoration: none;
 
 }
+
+
 
 li a:hover {
     color: aqua;
@@ -190,13 +193,10 @@ section {
     margin-bottom: 10px;
 }
 
-.my-skills{
-    margin-top: 300px;
-}
+
 
 .my-skills h3 {
     padding-top: 80px;
-    padding-bottom: 50px;
     font-size: 25px;
 }
 
@@ -239,18 +239,16 @@ section {
 .project-container {
     display: flex;
 }
- 
 
 .project-grid {
     display: flex;
-    margin-top: 150px;
+    margin-top: 60px;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
 
 .project-card {
-    
     column-gap: ;
     margin-bottom: 5%;
     background-color: rgb(3, 26, 46);
