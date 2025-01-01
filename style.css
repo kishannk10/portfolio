@@ -1,3 +1,4 @@
+
 * {
     padding: 0%;
     margin: 0%;
@@ -216,6 +217,7 @@ section {
     padding: 19px;
     transition: 1s;
     column-gap: 20%;
+    color: rgba(213, 192, 228, 0.959);
 }
 
 
@@ -238,6 +240,7 @@ section {
 
 .project-container {
     display: flex;
+    
 }
 
 .project-grid {
@@ -249,7 +252,7 @@ section {
 }
 
 .project-card {
-    column-gap: ;
+    
     margin-bottom: 5%;
     background-color: rgb(3, 26, 46);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -257,6 +260,7 @@ section {
     border: 2px;
     border-radius: 30px;
     transition: 1s;
+    width: 90%;
 
 }
 
@@ -265,13 +269,14 @@ section {
     background-clip: text;
     color: transparent;
     margin-bottom: 10px;
+    
 }
 
 
 .open {
     text-decoration: none;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 
 
 }
@@ -280,7 +285,7 @@ section {
     text-decoration: none;
     color: white;
     border: 3px solid rgb(125, 71, 161);
-    padding: 10px;
+    padding: 15px;
     border-radius: 30px;
     transition: 1s;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
