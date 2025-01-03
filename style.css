@@ -1,14 +1,10 @@
 
-
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: "poppins";
     scroll-behavior: smooth;
-    
-
-
 }
 
 body {
@@ -54,7 +50,7 @@ body {
 }
 
 ul li {
-    list-style-type: none;
+    list-style-type:circle;
     color: white;
 }
 
@@ -163,6 +159,34 @@ section {
 }
 
 
+/*about-me*/
+.about-me-container{
+    display: flex;
+    margin-top: 6%;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+
+}
+.about-me-card{
+    background-color: rgb(3, 26, 46);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 60px;
+    border: 2px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    
+}
+.about-me h2{
+    margin-bottom: 50px;
+}
+.content{
+    margin-bottom: 30px;
+}
+.key-point ul li{
+  padding: 3%;
+  color: rgba(213, 192, 228, 0.959);
+}
 
 /*education*/
 
@@ -179,11 +203,10 @@ section {
     padding: 60px;
     border: 2px;
     border-radius: 30px;
-    transition: 1s;
     cursor: pointer;
     flex-direction: column;
     flex-wrap: wrap;
-    color: black;
+
 }
 
 
@@ -216,8 +239,6 @@ section {
 
 .skills-info ul li {
     padding: 19px;
-    transition: 1s;
-    column-gap: 20%;
     color: rgba(213, 192, 228, 0.959);
 }
 
@@ -231,7 +252,7 @@ section {
     color: white;
     justify-content: center;
     margin-left: 30%;
-    transition: 1s;
+
 
 
 }
@@ -260,7 +281,6 @@ section {
     padding: 60px;
     border: 2px;
     border-radius: 30px;
-    transition: 1s;
     width: 90%;
 
 }
@@ -288,14 +308,13 @@ section {
     border: 3px solid rgb(125, 71, 161);
     padding: 15px;
     border-radius: 30px;
-    transition: 1s;
+    transition: 0.5s;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .open a:hover {
     background-color: rgba(125, 71, 167);
     color: rgb(248, 239, 239);
-    transform: translatey(-6px);
 
 }
 
@@ -364,7 +383,6 @@ p {
 
 @media (max-width:1600px) {
     .about {
-        display: ;
         flex-wrap: wrap;
     }
 
@@ -438,17 +456,24 @@ p {
         transform: translatex(10%);
 
     }
+    .about-me-container{
+        width: 100%;
+        margin-left: 0%;
+
+        
+    }
+    .about-me-card {
+      text-align:justify;
+      padding: 10%;
+      
+    }
 
     .Education-grid {
         width: 100%;
-        align-content: center;
-        justify-content: center;
-        margin-left: 10px;
         row-gap: 60px;
         display: flex;
     }
-
-
+    
     .Education-container h2 {
         margin-bottom: 60px;
     }
@@ -469,11 +494,10 @@ p {
 
     .skills-info {
         flex-direction: column;
-
-
     }
 
     .skills-info ul li {
+        list-style-type:none;
         text-align: center;
 
     }
