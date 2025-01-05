@@ -1,20 +1,15 @@
 AOS.init();
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+var sidenav = document.querySelector(".side-navbar")
 
-menuToggle. onclick = () => {
-        navLinks.classList.toggle('active');
+function showNavbar() {
+    sidenav.style.left = "0%"
 
-    }
-
-
-
-
-
-
-
-
+}
+function closeNavbar()
+{
+     sidenav.style.left = "-60%"
+}
 
 
 
