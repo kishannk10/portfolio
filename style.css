@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "poppins";
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -11,55 +12,75 @@ body {
 
 }
 
-.header {
+.navbar h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar {
     display: flex;
-    justify-content: space-between;
     position: fixed;
-    width: 100%; 
-    gap: 5rem;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
     backdrop-filter: blur(8px);
-    color: white;
-    padding: 0.5rem 1.5rem;
-    z-index: 100;
+    z-index: 1;
+
 }
 
-.logo {
- margin-left: 30px;
-   color: white; 
-    font-size: 30px;
-    text-wrap: nowrap;
-    transition: 0.3s ease-in-out;
-    text-decoration: none;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-.nav-links {
+.navbar-links {
     display: flex;
-    gap: 30px;
+    column-gap: 20px;
 
 }
 
-ul li {
-    list-style-type: none;
-    color: white;
-}
-
-li a {
-    position: relative;
-    color: white;
+.navbar-link a {
     text-decoration: none;
+    color: white;
 
 }
 
-
-
-li a:hover {
+.navbar-link a:hover {
     color: aqua;
+}
+
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+.side-navbar {
+   
+    backdrop-filter: blur(8px);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: -60%;
+    padding: 35px;
+    padding-left: 50px;
+    transition: 0.5s;
+    z-index: 2;
 
 }
+
+.side-navbar-link {
+    margin-bottom: 70px;
+}
+
+.side-navbar-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-link a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
 
 .menu-toggle {
     display: none;
@@ -255,7 +276,8 @@ section {
     background-color: red;
     border-radius: 4px;
 }
-.css{
+
+.css {
     margin-top: 20px;
     height: 7px;
     max-width: 75%;
@@ -270,6 +292,7 @@ section {
     background-color: red;
     border-radius: 4px;
 }
+
 .bootstarp {
     margin-top: 20px;
     height: 7px;
@@ -277,6 +300,7 @@ section {
     background-color: red;
     border-radius: 4px;
 }
+
 .my-sql {
     margin-top: 20px;
     height: 7px;
@@ -284,6 +308,7 @@ section {
     background-color: red;
     border-radius: 4px;
 }
+
 .react {
     margin-top: 20px;
     height: 7px;
@@ -389,14 +414,15 @@ section {
 .contact-me p {
     padding: 20px;
     font-size: 30px;
-   margin-left: 30%;
+    margin-left: 30%;
 }
- iframe{
+
+iframe {
     flex-wrap: wrap;
     width: 900px;
     margin-top: 50px;
     border-radius: 30px;
-    
+
 }
 
 
@@ -462,55 +488,36 @@ p {
     .project-card {
         width: 100%;
     }
-    .code-toggle{
-       margin-left: 10%;
-       margin-top: 6%;
+
+    .code-toggle {
+        margin-left: 10%;
+        margin-top: 6%;
     }
 
 }
 
 @media (max-width:700px) {
 
-    .header .menu-toggle {
-        display: block;
-        font-size: 30px;
 
+    .navbar-menu-toggle {
+        display: block;
+        color: white;
     }
 
     .nav-links {
-        position: absolute;
-        top: 100%;
-        width: 90%;
-        margin-top: 10px;
-        border-radius: 20px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
         display: none;
     }
 
-    .nav-links li {
-        margin: 80px;
-    }
 
-    .nav-links a {
-        padding: 20%;
-    }
-
-
-    .nav-links.active {
-        display: block;
+    .navbar-links {
+        display: none;
     }
 
     .header {
-       width:100%;
+        width: 100%;
     }
 
-    .header .logo {
-        font-size: 30px;
-    }
+
 
     .about-container {
         flex-direction: column;
@@ -599,9 +606,10 @@ p {
     }
 
 
-    iframe{
-       margin-left: 0%;
-       margin-right: 0%;
-        max-width: 100%;      
+    iframe {
+        margin-left: 0%;
+        margin-right: 0%;
+        max-width: 100%;
+
     }
 }
